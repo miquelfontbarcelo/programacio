@@ -1,0 +1,13 @@
+import random
+
+x = random.randint(1, 100)
+
+
+y=int(input("demana numero"))
+
+while (y!=x):
+    if (x>y):
+        print ("es petit però valent")
+    else:
+        print ("es gros")
+    y=int(input("demana numero"))
