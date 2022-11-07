@@ -1,29 +1,28 @@
 import random
 
-#cream el random
 x = random.randint(1, 100)
-print("el nombre és ", x)
-
 
 endevinat = True
-#comptador torns
+
 torn = 1
-llista = []  
+llista = []
 
 
-while (endevinat):
-    torn +=1
-    y=int(input("demana numero"))
-    
+
+
+while (endevinat) :        
+    torn += 1
+    y = int(input("Adivina el numero escrivint-hi un: "))
+   
     if (x>y):
-        print ("es petit però valent")
+        print("Es petit, torna a provar")
     elif (x<y):
-        print ("es gros")
+        print("Es gran, torna a provar")
     else:
         endevinat = False
-     llista.append(y)
     
+    llista.append(y)
 
-print("Molt bé has endevinat!!")
-print("Has emprat", torn, "torns")
+print("Enorabona! Aconseguit en" , torn , "vegades.")
 print(llista)
+print("En efectiu x era", x)
