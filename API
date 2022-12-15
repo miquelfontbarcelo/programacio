@@ -11,12 +11,11 @@ def consumeix():
 def imprimeixrespecie(l):
     i = int(input("Escriu la posició: "))
     element = l['records'][i-1]
-    nomcientific = 
-    return str("Espècie posició " + str(i) + " és " + element["nom"] + nomcientific )
+    return str("Espècie posició " + str(i) + " és " + element["nom"] + "nomcientífic" + element["cinetfic"])
 
 def getRandom(l):
     especie = l['records'][random.randint(0, 92)]
-    return especie["nom"]
+    return especie["nom"]  
 
 def llistatTots(l):
     for i in l['records']:
