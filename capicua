@@ -1,0 +1,12 @@
+def escapicua(n):
+    capi=True
+    capicua=str(n)
+    p=0
+    d=len(capicua)-1
+    while (p<=d):
+        if capicua[p]!=capicua[d]:
+            capi=False
+        p=+1
+        d=-1
+    return capi
+print(escapicua(1441))
